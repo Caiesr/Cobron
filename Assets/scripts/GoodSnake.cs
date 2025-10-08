@@ -101,10 +101,10 @@ public class GoodSnake : MonoBehaviour
                 newPosition = tail[tail.Count - 1].transform.position - new UnityEngine.Vector3(0, 1, 0);
                 break;
             case Direction.down:
-                newPosition = tail[tail.Count - 1].transform.position - new UnityEngine.Vector3(0, 1, 0);
+                newPosition = tail[tail.Count - 1].transform.position + new UnityEngine.Vector3(0, 1, 0);
                 break;
             case Direction.left:
-                newPosition = tail[tail.Count - 1].transform.position - new UnityEngine.Vector3(1, 0, 0);
+                newPosition = tail[tail.Count - 1].transform.position + new UnityEngine.Vector3(1, 0, 0);
                 break;
             case Direction.right:
                 newPosition = tail[tail.Count - 1].transform.position - new UnityEngine.Vector3(1, 0, 0);
